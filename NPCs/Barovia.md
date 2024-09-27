@@ -1,6 +1,5 @@
 #### Koljan Indirowitsch
-- Bürgermeister von [Barovia](../Orte/Barovia)
-- 
+- Bürgermeister von [Barovia](../Orte/Barovia) 
 
 #### Irena Koljana
 - Geliebte von [Koljan Indirowitsch](#Koljan%20%Indirowitsch)?
@@ -9,4 +8,6 @@
 #### Ismark Koljanovitsch
 - Mann in der Taverne
 - Sohn des Bürgermeisters
-- 
+
+#### Donovitsch
+- Priester des Dorfes

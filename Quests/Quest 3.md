@@ -1,0 +1,1 @@
+Irena zur Abtei (120 Meilen entfernt) bringen. Alternativ kann Sie auch in Fladik (ca. 2/3 des Weges) abgeliefert werden. 
