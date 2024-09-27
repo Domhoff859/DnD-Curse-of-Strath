@@ -1,0 +1,3 @@
+- Startpunkt der Geschichte.
+- Kleines Dorf mit Warenhändler, Waffenschmied, Rüstungshändler, Magischen Händler und Alchemisten.
+- Es führt eine Straße in den Osten und Norden
