@@ -1,1 +1,1 @@
-Irena zur Abtei (120 Meilen entfernt) bringen. Alternativ kann Sie auch in Fladik (ca. 2/3 des Weges) abgeliefert werden. 
+Irena zur Abtei in Krezk (120 Meilen entfernt) bringen. Alternativ kann Sie auch in Vallaki (ca. 2/3 des Weges) abgeliefert werden. 

@@ -11,3 +11,8 @@
 
 #### Donovitsch
 - Priester des Dorfes
+
+#### Morgana
+- Hexe von Dorf Bavoria 
+- Verkauft Kuchen im Tausch gegen Kinder
+- Sehr mächtig
