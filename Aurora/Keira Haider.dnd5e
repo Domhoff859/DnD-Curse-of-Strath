@@ -14,7 +14,7 @@
 		<archetype>
 		</archetype>
 		<background>Charlatan</background>
-		<level>2</level>
+		<level>3</level>
 		<portrait>
 			<companion>
 			</companion>
@@ -28,7 +28,7 @@
 			<name>Keira Haider</name>
 			<gender>Female</gender>
 			<player-name>Christoph</player-name>
-			<experience>420</experience>
+			<experience>940</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
 				<attack identifier="cb9f2fc3-8ff7-47dc-8f72-34d7805a4425" name="Shortsword" range="5 ft" attack="+4 vs AC" damage="1d6+2 piercing" displayed="true" ability="Dexterity">
@@ -36,6 +36,9 @@
 				</attack>
 				<attack identifier="3ec4970b-ec7e-4293-bad7-35050eee567d" name="Shortbow" range="80/320" attack="+4 vs AC" damage="1d6+2 piercing" displayed="true" ability="Dexterity">
 					<description><![CDATA[Ammunition, Two-Handed]]></description>
+				</attack>
+				<attack identifier="df892b64-ee1d-4cde-a569-6a16cd02c89e" name="Dagger" range="20/60" attack="+4 vs AC" damage="1d4+2 piercing" displayed="true" ability="Dexterity">
+					<description><![CDATA[Finesse, Light, Thrown]]></description>
 				</attack>
 				<attack identifier="df892b64-ee1d-4cde-a569-6a16cd02c89e" name="Dagger" range="20/60" attack="+4 vs AC" damage="1d4+2 piercing" displayed="true" ability="Dexterity">
 					<description><![CDATA[Finesse, Light, Thrown]]></description>
@@ -69,13 +72,14 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 			<additional-features><![CDATA[]]></additional-features>
 			<currency>
 				<copper>0</copper>
-				<silver>6</silver>
+				<silver>0</silver>
 				<electrum>0</electrum>
-				<gold>50</gold>
+				<gold>76</gold>
 				<platinum>0</platinum>
 				<equipment><![CDATA[]]></equipment>
 				<treasure><![CDATA[1x Glasflasche geriebene getrocknete Belladona versetzt mit Alkohol, nicht brennbar, halbvoll
-20x vergiftete Pfeile
+12x vergiftete Pfeile
+5x Normale Pfeile
 1x Stofffetzen
 1x Super wertvoller Edelstein (Glassscherbe)
 5x Ölflaschen]]></treasure>
@@ -86,8 +90,7 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 				<note column="right">
 				</note>
 			</notes>
-			<quest>
-			</quest>
+			<quest>1 x Silbernes Amulet (Necrotic Resistance, Detects Undead in proximity, Advantage Saving Throw Charmed Frigthened by Undead)</quest>
 		</input>
 		<appearance>
 			<portrait>C:\Users\domin\Documents\5e Character Builder\portraits\human female barbarian 2.jpg</portrait>
@@ -106,7 +109,7 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 			<wisdom>12</wisdom>
 			<charisma>15</charisma>
 		</abilities>
-		<elements level-count="2" registered-count="15">
+		<elements level-count="3" registered-count="24">
 			<element type="Option" name="Feats" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
 			<element type="Option" name="Multiclassing" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING">
 				<element type="Grants" name="Multiclass Spellcasting" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -157,8 +160,8 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 					<element type="Proficiency" name="Saving Throw Proficiency (Dexterity)" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
 					<element type="Proficiency" name="Saving Throw Proficiency (Intelligence)" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
 					<element type="Class Feature" name="Expertise" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EXPERTISE">
-						<element type="Class Feature" name="Expertise (Rogue)" requiredLevel="1" number="1" checksum="dc05be48" registered="" />
-						<element type="Class Feature" name="Expertise (Rogue)" requiredLevel="1" number="2" checksum="450ceff2" registered="" />
+						<element type="Class Feature" name="Expertise (Rogue)" requiredLevel="1" number="1" checksum="dc05be48" registered="ID_EXPERTISE_SKILL_PERCEPTION" />
+						<element type="Class Feature" name="Expertise (Rogue)" requiredLevel="1" number="2" checksum="450ceff2" registered="ID_EXPERTISE_SKILL_SLEIGHTOFHAND" />
 					</element>
 					<element type="Class Feature" name="Sneak Attack" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_SNEAKATTACK" />
 					<element type="Class Feature" name="Thieves’ Cant" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT">
@@ -166,6 +169,19 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 					</element>
 					<element type="Grants" name="Multiclassing Prerequisite" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 					<element type="Class Feature" name="Cunning Action" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION" />
+					<element type="Class Feature" name="Roguish Archetype" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE">
+						<element type="Archetype" name="Roguish Archetype" requiredLevel="3" checksum="ef472bfb" registered="ID_WOTC_PHB_ARCHETYPE_ARCANE_TRICKSTER">
+							<element type="Archetype Feature" name="Spellcasting" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING">
+								<element type="Spell" name="Cantrip (Arcane Trickster)" requiredLevel="3" number="1" checksum="d171ba5f" registered="ID_PHB_SPELL_MINOR_ILLUSION" />
+								<element type="Spell" name="Cantrip (Arcane Trickster)" requiredLevel="3" number="2" checksum="3a46015c" registered="ID_PHB_SPELL_PRESTIDIGITATION" />
+								<element type="Spell" name="Spell (Arcane Trickster)" requiredLevel="3" checksum="1cf673b1" registered="ID_PHB_SPELL_FIND_FAMILIAR" />
+								<element type="Spell" name="Spell (Arcane Trickster)" requiredLevel="3" number="1" checksum="87e7d4e7" registered="ID_PHB_SPELL_DISGUISE_SELF" />
+								<element type="Spell" name="Spell (Arcane Trickster)" requiredLevel="3" number="2" checksum="dff97dcf" registered="ID_PHB_SPELL_SILENT_IMAGE" />
+								<element type="Spell" name="Mage Hand" id="ID_PHB_SPELL_MAGE_HAND" />
+							</element>
+							<element type="Archetype Feature" name="Mage Hand Legerdemain" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN" />
+						</element>
+					</element>
 				</element>
 				<element type="Background" name="Background" requiredLevel="1" checksum="6a621392" registered="ID_BACKGROUND_CHARLATAN">
 					<element type="Background Feature" name="Variant Feature" requiredLevel="1" checksum="7eb4f082" registered="" />
@@ -190,6 +206,7 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 				<element type="Grants" name="Constitution Modifier" id="ID_INTERNAL_GRANTS_HP_CONSTITUTION_MODIFIER" />
 			</element>
 			<element type="Level" name="2" id="ID_LEVEL_2" />
+			<element type="Level" name="3" id="ID_LEVEL_3" />
 		</elements>
 		<defenses>
 			<conditional>
@@ -304,7 +321,7 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 					</notes>
 				</details>
 			</item>
-			<item identifier="b60c2e5c-98f3-4e23-bf18-82e3f000afc6" name="Potion of Healing" id="ID_WOTC_PHB_ITEM_POTIONOFHEALING">
+			<item identifier="b60c2e5c-98f3-4e23-bf18-82e3f000afc6" name="Potion of Healing" id="ID_WOTC_PHB_ITEM_POTIONOFHEALING" amount="5">
 				<details card="true">
 					<name>
 					</name>
@@ -313,7 +330,7 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 				</details>
 			</item>
 		</equipment>
-		<sum element-count="63">
+		<sum element-count="76">
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -328,7 +345,6 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 			<element type="Language" id="ID_LANGUAGE_COMMON" />
 			<element type="Language" id="ID_LANGUAGE_GNOMISH" />
 			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
 			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
 			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
 			<element type="Background" id="ID_BACKGROUND_CHARLATAN" />
@@ -341,6 +357,13 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 			<element type="Level" id="ID_LEVEL_2" />
 			<element type="Weapon" id="ID_WOTC_PHB_WEAPON_SHORTSWORD" />
 			<element type="Armor" id="ID_WOTC_ARMOR_LIGHT_LEATHER" />
+			<element type="Level" id="ID_LEVEL_3" />
+			<element type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+			<element type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+			<element type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+			<element type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+			<element type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
 			<element type="Class" id="ID_WOTC_PHB_CLASS_ROGUE" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
@@ -377,8 +400,29 @@ You know what people want and you deliver, or rather, you promise to deliver. Co
 			<element type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE" />
+			<element type="Archetype" id="ID_WOTC_PHB_ARCHETYPE_ARCANE_TRICKSTER" />
+			<element type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" />
+			<element type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
+			<element type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN" />
+			<element type="Class Feature" id="ID_EXPERTISE_SKILL_SLEIGHTOFHAND" />
+			<element type="Class Feature" id="ID_EXPERTISE_SKILL_PERCEPTION" />
 		</sum>
-		<magic />
+		<magic>
+			<spellcasting name="Arcane Trickster" ability="Intelligence" attack="2" dc="10" source="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING">
+				<slots s1="2" s2="0" s3="0" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
+				<cantrips>
+					<spell name="Mage Hand" level="0" id="ID_PHB_SPELL_MAGE_HAND" />
+					<spell name="Minor Illusion" level="0" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+					<spell name="Prestidigitation" level="0" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+				</cantrips>
+				<spells>
+					<spell name="Disguise Self" level="1" id="ID_PHB_SPELL_DISGUISE_SELF" known="true" />
+					<spell name="Find Familiar" level="1" id="ID_PHB_SPELL_FIND_FAMILIAR" known="true" />
+					<spell name="Silent Image" level="1" id="ID_PHB_SPELL_SILENT_IMAGE" known="true" />
+				</spells>
+			</spellcasting>
+		</magic>
 	</build>
 	<!-- restricted sources -->
 	<sources>

@@ -14,7 +14,7 @@
 		<archetype>
 		</archetype>
 		<background>Acolyte</background>
-		<level>2</level>
+		<level>3</level>
 		<portrait>
 			<companion>
 			</companion>
@@ -28,7 +28,7 @@
 			<name>Caedis</name>
 			<gender>Male</gender>
 			<player-name>Dominic</player-name>
-			<experience>420</experience>
+			<experience>940</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
 				<attack identifier="6a4ae9ce-e135-4640-b56c-47e0c78bbc99" name="Crossbow, Light" range="80/320" attack="+2 vs AC" damage="1d8+0 piercing" displayed="true" ability="Dexterity">
@@ -65,7 +65,7 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 			<additional-features><![CDATA[]]></additional-features>
 			<currency>
 				<copper>0</copper>
-				<silver>4</silver>
+				<silver>3</silver>
 				<electrum>0</electrum>
 				<gold>60</gold>
 				<platinum>0</platinum>
@@ -99,12 +99,12 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 			<wisdom>15</wisdom>
 			<charisma>14</charisma>
 		</abilities>
-		<elements level-count="2" registered-count="21">
+		<elements level-count="3" registered-count="22">
 			<element type="Option" name="Feats" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
 			<element type="Option" name="Multiclassing" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING">
 				<element type="Grants" name="Multiclass Spellcasting" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
 			</element>
-			<element type="Level" name="1" id="ID_LEVEL_1" rndhp="8,5,3,8,2,8,4,3,1,8,7,3,8,2,1,4,6,8,1,2">
+			<element type="Level" name="1" id="ID_LEVEL_1" rndhp="8,5,6,8,2,8,4,3,1,8,7,3,8,2,1,4,6,8,1,2">
 				<element type="Race" name="Race" requiredLevel="1" checksum="1597ef76" registered="ID_RACE_HUMAN">
 					<element type="Language" name="Language (Human)" requiredLevel="1" checksum="a9176f2d" registered="ID_LANGUAGE_DWARVISH" />
 					<element type="Race Variant" name="Human Variant" requiredLevel="1" checksum="492ee2bb" registered="" />
@@ -163,6 +163,8 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 							<element type="Archetype Feature" name="Domain Spells" id="ID_WOTC_DMG_ARCHETYPE_FEATURE_DEATH_DOMAIN_DOMAIN_SPELLS">
 								<element type="Spell" name="False Life" id="ID_PHB_SPELL_FALSE_LIFE" />
 								<element type="Spell" name="Ray of Sickness" id="ID_PHB_SPELL_RAY_OF_SICKNESS" />
+								<element type="Spell" name="Blindness/Deafness" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" />
+								<element type="Spell" name="Ray of Enfeeblement" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" />
 							</element>
 							<element type="Archetype Feature" name="Bonus Proficiency" id="ID_WOTC_DMG_ARCHETYPE_FEATURE_DEATH_DOMAIN_BONUS_PROFICIENCY">
 								<element type="Proficiency" name="Weapon Proficiency (Martial Weapons)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS">
@@ -229,6 +231,7 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 				<element type="Grants" name="Constitution Modifier" id="ID_INTERNAL_GRANTS_HP_CONSTITUTION_MODIFIER" />
 			</element>
 			<element type="Level" name="2" id="ID_LEVEL_2" />
+			<element type="Level" name="3" id="ID_LEVEL_3" />
 		</elements>
 		<defenses>
 			<conditional>
@@ -352,7 +355,7 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 					</notes>
 				</details>
 			</item>
-			<item identifier="0db1d926-a470-4c7c-b787-d94ad484e3fc" name="Rations (1 day)" id="ID_WOTC_PHB_ITEM_RATIONS_1DAY" amount="10">
+			<item identifier="0db1d926-a470-4c7c-b787-d94ad484e3fc" name="Rations (1 day)" id="ID_WOTC_PHB_ITEM_RATIONS_1DAY" amount="9">
 				<details card="true">
 					<name>
 					</name>
@@ -384,16 +387,8 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 					</notes>
 				</details>
 			</item>
-			<item identifier="ff62cc8f-3af2-4f43-b99e-ac7c58fadf71" name="Potion of Healing" id="ID_WOTC_PHB_ITEM_POTIONOFHEALING">
-				<details card="true">
-					<name>
-					</name>
-					<notes>
-					</notes>
-				</details>
-			</item>
 		</equipment>
-		<sum element-count="104">
+		<sum element-count="107">
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -424,6 +419,7 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 			<element type="Armor" id="ID_WOTC_ARMOR_LIGHT_LEATHER" />
 			<element type="Weapon" id="ID_WOTC_PHB_WEAPON_MACE" />
 			<element type="Armor" id="ID_WOTC_GEAR_SHIELD" />
+			<element type="Level" id="ID_LEVEL_3" />
 			<element type="Class" id="ID_WOTC_PHB_CLASS_CLERIC" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
@@ -468,6 +464,8 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 			<element type="Archetype Feature" id="ID_WOTC_DMG_ARCHETYPE_FEATURE_DEATH_DOMAIN_DOMAIN_SPELLS" />
 			<element type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" />
 			<element type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" />
+			<element type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" />
+			<element type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" />
 			<element type="Archetype Feature" id="ID_WOTC_DMG_ARCHETYPE_FEATURE_DEATH_DOMAIN_BONUS_PROFICIENCY" />
 			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS" />
@@ -501,7 +499,7 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 		</sum>
 		<magic>
 			<spellcasting name="Cleric" ability="Wisdom" attack="5" dc="13" source="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC">
-				<slots s1="3" s2="0" s3="0" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
+				<slots s1="4" s2="2" s3="0" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
 				<cantrips>
 					<spell name="Chill Touch" level="0" id="ID_PHB_SPELL_CHILL_TOUCH" />
 					<spell name="Mending" level="0" id="ID_PHB_SPELL_MENDING" />
@@ -516,6 +514,9 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 					<spell name="Healing Word" level="1" id="ID_PHB_SPELL_HEALING_WORD" prepared="true" />
 					<spell name="Inflict Wounds" level="1" id="ID_PHB_SPELL_INFLICT_WOUNDS" prepared="true" />
 					<spell name="Ray of Sickness" level="1" id="ID_PHB_SPELL_RAY_OF_SICKNESS" prepared="true" always-prepared="true" known="true" />
+					<spell name="Blindness/Deafness" level="2" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" prepared="true" always-prepared="true" known="true" />
+					<spell name="Ray of Enfeeblement" level="2" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" prepared="true" always-prepared="true" known="true" />
+					<spell name="Spiritual Weapon" level="2" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" prepared="true" />
 					<spell name="Bless" level="1" id="ID_PHB_SPELL_BLESS" />
 					<spell name="Ceremony" level="1" id="ID_XGTE_SPELL_CEREMONY" />
 					<spell name="Create or Destroy Water" level="1" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" />
@@ -527,6 +528,21 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 					<spell name="Purify Food and Drink" level="1" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" />
 					<spell name="Sanctuary" level="1" id="ID_PHB_SPELL_SANCTUARY" />
 					<spell name="Shield of Faith" level="1" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
+					<spell name="Aid" level="2" id="ID_PHB_SPELL_AID" />
+					<spell name="Augury" level="2" id="ID_PHB_SPELL_AUGURY" />
+					<spell name="Calm Emotions" level="2" id="ID_PHB_SPELL_CALM_EMOTIONS" />
+					<spell name="Continual Flame" level="2" id="ID_PHB_SPELL_CONTINUAL_FLAME" />
+					<spell name="Enhance Ability" level="2" id="ID_PHB_SPELL_ENHANCE_ABILITY" />
+					<spell name="Find Traps" level="2" id="ID_PHB_SPELL_FIND_TRAPS" />
+					<spell name="Gentle Repose" level="2" id="ID_PHB_SPELL_GENTLE_REPOSE" />
+					<spell name="Hold Person" level="2" id="ID_PHB_SPELL_HOLD_PERSON" />
+					<spell name="Lesser Restoration" level="2" id="ID_PHB_SPELL_LESSER_RESTORATION" />
+					<spell name="Locate Object" level="2" id="ID_PHB_SPELL_LOCATE_OBJECT" />
+					<spell name="Prayer of Healing" level="2" id="ID_PHB_SPELL_PRAYER_OF_HEALING" />
+					<spell name="Protection from Poison" level="2" id="ID_PHB_SPELL_PROTECTION_FROM_POISON" />
+					<spell name="Silence" level="2" id="ID_PHB_SPELL_SILENCE" />
+					<spell name="Warding Bond" level="2" id="ID_PHB_SPELL_WARDING_BOND" />
+					<spell name="Zone of Truth" level="2" id="ID_PHB_SPELL_ZONE_OF_TRUTH" />
 				</spells>
 			</spellcasting>
 		</magic>
