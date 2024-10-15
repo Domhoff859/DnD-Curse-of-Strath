@@ -14,7 +14,7 @@
 		<archetype>
 		</archetype>
 		<background>Guild Artisan</background>
-		<level>2</level>
+		<level>3</level>
 		<portrait>
 			<companion>
 			</companion>
@@ -28,11 +28,14 @@
 			<name>Lyndon Sweetbottle</name>
 			<gender>Male</gender>
 			<player-name>Denis</player-name>
-			<experience>420</experience>
+			<experience>940</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
 				<attack identifier="40e62aa8-c314-456e-9751-0cef14519f70" name="Pan flute" range="5 ft" attack="+4 vs AC" damage="+2 " displayed="true" ability="Strength">
 					<description><![CDATA[]]></description>
+				</attack>
+				<attack identifier="f43d8ef4-839c-455a-90e3-003a20af2372" name="Dagger" range="20/60" attack="+6 vs AC" damage="1d4+4 piercing" displayed="true" ability="Dexterity">
+					<description><![CDATA[Finesse, Light, Thrown]]></description>
 				</attack>
 				<attack identifier="1c7d2d01-6611-49f4-88a5-0af516576feb" name="Handaxe" range="20/60" attack="+4 vs AC" damage="1d6+2 slashing" displayed="true" ability="Strength">
 					<description><![CDATA[Light, Thrown]]></description>
@@ -74,8 +77,7 @@ You must pay dues of 5 gp per month to the guild. If you miss payments, you must
 			<notes>
 				<note column="left">
 				</note>
-				<note column="right">
-				</note>
+				<note column="right">Lycantrophy</note>
 			</notes>
 			<quest>
 			</quest>
@@ -97,7 +99,7 @@ You must pay dues of 5 gp per month to the guild. If you miss payments, you must
 			<wisdom>13</wisdom>
 			<charisma>14</charisma>
 		</abilities>
-		<elements level-count="2" registered-count="28">
+		<elements level-count="3" registered-count="36">
 			<element type="Option" name="Average Hit Points" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP" />
 			<element type="Option" name="Feats" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
 			<element type="Option" name="Multiclassing" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING">
@@ -165,11 +167,26 @@ You must pay dues of 5 gp per month to the guild. If you miss payments, you must
 						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="3" checksum="134ad7fb" registered="ID_PHB_SPELL_UNSEEN_SERVANT" />
 						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="4" checksum="c5927ed5" registered="ID_PHB_SPELL_HEROISM" />
 						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="2" checksum="78d1d9aa" registered="ID_PHB_SPELL_CURE_WOUNDS" />
+						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="3" checksum="db47f1e6" registered="ID_PHB_SPELL_SHATTER" />
 						<element type="Grants" name="Ritual Casting" id="ID_INTERNAL_RITUAL_CASTING" />
 					</element>
 					<element type="Grants" name="Multiclassing Prerequisite" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 					<element type="Class Feature" name="Jack of All Trades" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES" />
 					<element type="Class Feature" name="Song of Rest" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SONG_OF_REST" />
+					<element type="Class Feature" name="Bard College" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARD_COLLEGE">
+						<element type="Archetype" name="Bard College" requiredLevel="3" checksum="15878cb4" registered="ID_WOTC_PHB_ARCHETYPE_COLLEGE_OF_LORE">
+							<element type="Archetype Feature" name="Bonus Proficiencies" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES">
+								<element type="Proficiency" name="Bonus Proficiencies (Bard)" requiredLevel="3" number="1" checksum="79c7c38d" registered="ID_PROFICIENCY_SKILL_ACROBATICS" />
+								<element type="Proficiency" name="Bonus Proficiencies (Bard)" requiredLevel="3" number="2" checksum="e0ce9237" registered="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+								<element type="Proficiency" name="Bonus Proficiencies (Bard)" requiredLevel="3" number="3" checksum="97c9a2a1" registered="ID_PROFICIENCY_SKILL_STEALTH" />
+							</element>
+							<element type="Archetype Feature" name="Cutting Words" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS" />
+						</element>
+					</element>
+					<element type="Class Feature" name="Expertise" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_EXPERTISE">
+						<element type="Class Feature" name="Expertise (Bard 3)" requiredLevel="3" number="1" checksum="281885ea" registered="ID_EXPERTISE_SKILL_PERFORMANCE" />
+						<element type="Class Feature" name="Expertise (Bard 3)" requiredLevel="3" number="2" checksum="b111d450" registered="ID_EXPERTISE_SKILL_PERSUASION" />
+					</element>
 				</element>
 				<element type="Background" name="Background" requiredLevel="1" checksum="6a621392" registered="ID_BACKGROUND_GUILD_ARTISAN">
 					<element type="Proficiency" name="Tool Proficiency (Guild Artisan)" requiredLevel="1" checksum="b46c8b72" registered="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
@@ -195,6 +212,7 @@ You must pay dues of 5 gp per month to the guild. If you miss payments, you must
 				<element type="Grants" name="Constitution Modifier" id="ID_INTERNAL_GRANTS_HP_CONSTITUTION_MODIFIER" />
 			</element>
 			<element type="Level" name="2" id="ID_LEVEL_2" />
+			<element type="Level" name="3" id="ID_LEVEL_3" />
 		</elements>
 		<defenses>
 			<conditional>
@@ -326,7 +344,7 @@ You must pay dues of 5 gp per month to the guild. If you miss payments, you must
 				</details>
 			</item>
 		</equipment>
-		<sum element-count="79">
+		<sum element-count="91">
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP" />
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
@@ -368,6 +386,11 @@ You must pay dues of 5 gp per month to the guild. If you miss payments, you must
 			<element type="Alignment" id="ID_ALIGNMENT_CHAOTIC_NEUTRAL" />
 			<element type="Level" id="ID_LEVEL_2" />
 			<element type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+			<element type="Level" id="ID_LEVEL_3" />
+			<element type="Spell" id="ID_PHB_SPELL_SHATTER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
 			<element type="Weapon" id="ID_WOTC_PHB_WEAPON_HANDAXE" />
 			<element type="Item" id="ID_WOTC_SRD_INSTRUMENT_PANFLUTE" />
 			<element type="Armor" id="ID_WOTC_ARMOR_LIGHT_LEATHER" />
@@ -406,10 +429,17 @@ You must pay dues of 5 gp per month to the guild. If you miss payments, you must
 			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES" />
 			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SONG_OF_REST" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARD_COLLEGE" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_EXPERTISE" />
+			<element type="Archetype" id="ID_WOTC_PHB_ARCHETYPE_COLLEGE_OF_LORE" />
+			<element type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES" />
+			<element type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS" />
+			<element type="Class Feature" id="ID_EXPERTISE_SKILL_PERFORMANCE" />
+			<element type="Class Feature" id="ID_EXPERTISE_SKILL_PERSUASION" />
 		</sum>
 		<magic>
 			<spellcasting name="Bard" ability="Charisma" attack="4" dc="12" source="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD">
-				<slots s1="3" s2="0" s3="0" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
+				<slots s1="4" s2="2" s3="0" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
 				<cantrips>
 					<spell name="Mending" level="0" id="ID_PHB_SPELL_MENDING" />
 					<spell name="Vicious Mockery" level="0" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
@@ -420,6 +450,7 @@ You must pay dues of 5 gp per month to the guild. If you miss payments, you must
 					<spell name="Heroism" level="1" id="ID_PHB_SPELL_HEROISM" known="true" />
 					<spell name="Illusory Script" level="1" id="ID_PHB_SPELL_ILLUSORY_SCRIPT" known="true" />
 					<spell name="Unseen Servant" level="1" id="ID_PHB_SPELL_UNSEEN_SERVANT" known="true" />
+					<spell name="Shatter" level="2" id="ID_PHB_SPELL_SHATTER" known="true" />
 				</spells>
 			</spellcasting>
 		</magic>
