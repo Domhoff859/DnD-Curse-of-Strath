@@ -1,0 +1,1 @@
+Auf dem Weg nach Valaki entdeckte die Gruppe das Versteck von der Hexe Morganta. In einer schäbigen Windmühle produzierte sie die Traumpasteten. Die Gruppe schaffte es Morganta und ihre beiden Töchter Ophalia und Bella (o_o) zu besiegen. Danach kam es auch zu einer kurzen erfolgreichen Konfrontation mit Zombiekindern im obersten Stockwerk der Mühle.
