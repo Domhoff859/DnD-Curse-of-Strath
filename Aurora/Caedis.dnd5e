@@ -28,13 +28,16 @@
 			<name>Caedis</name>
 			<gender>Male</gender>
 			<player-name>Dominic</player-name>
-			<experience>4762</experience>
+			<experience>5962</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
 				<attack identifier="6a4ae9ce-e135-4640-b56c-47e0c78bbc99" name="Crossbow, Light" range="80/320" attack="+2 vs AC" damage="1d8+0 piercing" displayed="true" ability="Dexterity">
 					<description><![CDATA[Ammunition, Loading, Two-Handed]]></description>
 				</attack>
 				<attack identifier="830255f8-ccaa-4ee9-ac13-955bf34e6600" name="Mace" range="5 ft" attack="+1 vs AC" damage="1d6-1 bludgeoning" displayed="true" ability="Strength">
+					<description><![CDATA[]]></description>
+				</attack>
+				<attack identifier="97f3dbac-e27f-41a1-9b23-e0984b2e0c08" name="Amulet" range="5 ft" attack="-1 vs AC" damage="-1 " displayed="true" ability="Strength">
 					<description><![CDATA[]]></description>
 				</attack>
 			</attacks>
@@ -78,9 +81,7 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 - Beutel mit verfluchter Asche 16/16]]></treasure>
 			</currency>
 			<notes>
-				<note column="left">- Beutel mit verfluchter Asche (1 Minute Nachteile auf Angriffe/Attack Rolls, wenn auf Gegner getroffen) -&gt; DC 13 Constitution Saving Throw, 10 Fuß Reichweite, zieht Untote an. -&gt; **Bag of Holding vor jeder Nacht rein**, **16 Anwendungen**
-
-</note>
+				<note column="left">- Beutel mit verfluchter Asche (1 Minute Nachteile auf Angriffe/Attack Rolls, wenn auf Gegner getroffen) -&gt; DC 13 Constitution Saving Throw, 10 Fuß Reichweite, zieht Untote an. -&gt; **Bag of Holding vor jeder Nacht rein**, **16 Anwendungen**</note>
 				<note column="right">
 				</note>
 			</notes>
@@ -90,7 +91,7 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 		<appearance>
 			<portrait>C:\Users\domin\Documents\5e Character Builder\portraits\human caedis.png</portrait>
 			<age>26</age>
-			<height>4'8"</height>
+			<height>5'9"</height>
 			<weight>100 lb.</weight>
 			<eyes>Red</eyes>
 			<skin>Fair</skin>
@@ -247,9 +248,9 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 			<element type="Level" name="4" id="ID_LEVEL_4" />
 		</elements>
 		<defenses>
-			<conditional>Health: 31/31
-Spell 1: 4/4
-Spell 2: 3/3</conditional>
+			<conditional>Health: 5/31-15
+Spell 1: 1/4
+Spell 2: 0/3</conditional>
 		</defenses>
 		<companion name="">
 			<attributes>
@@ -312,7 +313,6 @@ Spell 2: 3/3</conditional>
 				</details>
 			</item>
 			<item identifier="830255f8-ccaa-4ee9-ac13-955bf34e6600" name="Mace" id="ID_WOTC_PHB_WEAPON_MACE">
-				<equipped location="Primary Hand">true</equipped>
 				<details card="true">
 					<name>
 					</name>
@@ -385,7 +385,8 @@ Spell 2: 3/3</conditional>
 					</notes>
 				</details>
 			</item>
-			<item identifier="97f3dbac-e27f-41a1-9b23-e0984b2e0c08" name="Amulet" id="ID_WOTC_PHB_ITEM_AMULET">
+			<item identifier="97f3dbac-e27f-41a1-9b23-e0984b2e0c08" name="Amulet" id="ID_WOTC_PHB_ITEM_AMULET" sidebar="true">
+				<equipped location="Primary Hand">true</equipped>
 				<details card="true">
 					<name>
 					</name>
@@ -443,8 +444,8 @@ Spell 2: 3/3</conditional>
 			<element type="Ability Score Improvement" id="ID_INTERNAL_ASI_WISDOM" />
 			<element type="Ability Score Improvement" id="ID_INTERNAL_ASI_WISDOM" />
 			<element type="Armor" id="ID_WOTC_ARMOR_LIGHT_LEATHER" />
-			<element type="Weapon" id="ID_WOTC_PHB_WEAPON_MACE" />
 			<element type="Armor" id="ID_WOTC_GEAR_SHIELD" />
+			<element type="Item" id="ID_WOTC_PHB_ITEM_AMULET" />
 			<element type="Class" id="ID_WOTC_PHB_CLASS_CLERIC" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
@@ -534,18 +535,19 @@ Spell 2: 3/3</conditional>
 					<spell name="Toll the Dead" level="0" id="ID_XGTE_SPELL_TOLL_THE_DEAD" />
 				</cantrips>
 				<spells>
-					<spell name="Bane" level="1" id="ID_PHB_SPELL_BANE" prepared="true" />
 					<spell name="Command" level="1" id="ID_PHB_SPELL_COMMAND" prepared="true" />
 					<spell name="False Life" level="1" id="ID_PHB_SPELL_FALSE_LIFE" prepared="true" always-prepared="true" known="true" />
 					<spell name="Guiding Bolt" level="1" id="ID_PHB_SPELL_GUIDING_BOLT" prepared="true" />
 					<spell name="Healing Word" level="1" id="ID_PHB_SPELL_HEALING_WORD" prepared="true" />
 					<spell name="Inflict Wounds" level="1" id="ID_PHB_SPELL_INFLICT_WOUNDS" prepared="true" />
 					<spell name="Ray of Sickness" level="1" id="ID_PHB_SPELL_RAY_OF_SICKNESS" prepared="true" always-prepared="true" known="true" />
-					<spell name="Sanctuary" level="1" id="ID_PHB_SPELL_SANCTUARY" prepared="true" />
 					<spell name="Blindness/Deafness" level="2" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" prepared="true" always-prepared="true" known="true" />
+					<spell name="Hold Person" level="2" id="ID_PHB_SPELL_HOLD_PERSON" prepared="true" />
 					<spell name="Ray of Enfeeblement" level="2" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" prepared="true" always-prepared="true" known="true" />
 					<spell name="Silence" level="2" id="ID_PHB_SPELL_SILENCE" prepared="true" />
 					<spell name="Spiritual Weapon" level="2" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" prepared="true" />
+					<spell name="Zone of Truth" level="2" id="ID_PHB_SPELL_ZONE_OF_TRUTH" prepared="true" />
+					<spell name="Bane" level="1" id="ID_PHB_SPELL_BANE" />
 					<spell name="Bless" level="1" id="ID_PHB_SPELL_BLESS" />
 					<spell name="Ceremony" level="1" id="ID_XGTE_SPELL_CEREMONY" />
 					<spell name="Create or Destroy Water" level="1" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" />
@@ -555,6 +557,7 @@ Spell 2: 3/3</conditional>
 					<spell name="Detect Poison and Disease" level="1" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" />
 					<spell name="Protection from Evil and Good" level="1" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
 					<spell name="Purify Food and Drink" level="1" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" />
+					<spell name="Sanctuary" level="1" id="ID_PHB_SPELL_SANCTUARY" />
 					<spell name="Shield of Faith" level="1" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
 					<spell name="Aid" level="2" id="ID_PHB_SPELL_AID" />
 					<spell name="Augury" level="2" id="ID_PHB_SPELL_AUGURY" />
@@ -563,13 +566,11 @@ Spell 2: 3/3</conditional>
 					<spell name="Enhance Ability" level="2" id="ID_PHB_SPELL_ENHANCE_ABILITY" />
 					<spell name="Find Traps" level="2" id="ID_PHB_SPELL_FIND_TRAPS" />
 					<spell name="Gentle Repose" level="2" id="ID_PHB_SPELL_GENTLE_REPOSE" />
-					<spell name="Hold Person" level="2" id="ID_PHB_SPELL_HOLD_PERSON" />
 					<spell name="Lesser Restoration" level="2" id="ID_PHB_SPELL_LESSER_RESTORATION" />
 					<spell name="Locate Object" level="2" id="ID_PHB_SPELL_LOCATE_OBJECT" />
 					<spell name="Prayer of Healing" level="2" id="ID_PHB_SPELL_PRAYER_OF_HEALING" />
 					<spell name="Protection from Poison" level="2" id="ID_PHB_SPELL_PROTECTION_FROM_POISON" />
 					<spell name="Warding Bond" level="2" id="ID_PHB_SPELL_WARDING_BOND" />
-					<spell name="Zone of Truth" level="2" id="ID_PHB_SPELL_ZONE_OF_TRUTH" />
 				</spells>
 			</spellcasting>
 		</magic>
