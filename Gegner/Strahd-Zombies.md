@@ -1,0 +1,2 @@
+- Immunität gegen Gift 
+- Nekrotisch ist ganz normal

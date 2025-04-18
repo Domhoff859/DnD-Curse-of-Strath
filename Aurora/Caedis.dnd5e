@@ -28,16 +28,16 @@
 			<name>Caedis</name>
 			<gender>Male</gender>
 			<player-name>Dominic</player-name>
-			<experience>8172</experience>
+			<experience>10427</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
 				<attack identifier="6a4ae9ce-e135-4640-b56c-47e0c78bbc99" name="Crossbow, Light" range="80/320" attack="+3 vs AC" damage="1d8+0 piercing" displayed="true" ability="Dexterity">
 					<description><![CDATA[Ammunition, Loading, Two-Handed]]></description>
 				</attack>
-				<attack identifier="830255f8-ccaa-4ee9-ac13-955bf34e6600" name="Mace" range="5 ft" attack="+2 vs AC" damage="1d6-1 bludgeoning" displayed="true" ability="Strength">
+				<attack identifier="830255f8-ccaa-4ee9-ac13-955bf34e6600" name="Mace" range="5 ft" attack="+5 vs AC" damage="1d6+2 bludgeoning" displayed="true" ability="Strength">
 					<description><![CDATA[]]></description>
 				</attack>
-				<attack identifier="97f3dbac-e27f-41a1-9b23-e0984b2e0c08" name="Amulet" range="5 ft" attack="-1 vs AC" damage="-1 " displayed="true" ability="Strength">
+				<attack identifier="97f3dbac-e27f-41a1-9b23-e0984b2e0c08" name="Amulet" range="5 ft" attack="+2 vs AC" damage="+2 " displayed="true" ability="Strength">
 					<description><![CDATA[]]></description>
 				</attack>
 			</attacks>
@@ -68,9 +68,9 @@ You might also have ties to a specific temple dedicated to your chosen deity or 
 			<additional-features><![CDATA[]]></additional-features>
 			<currency>
 				<copper>0</copper>
-				<silver>3</silver>
+				<silver>0</silver>
 				<electrum>0</electrum>
-				<gold>11</gold>
+				<gold>0</gold>
 				<platinum>0</platinum>
 				<equipment><![CDATA[]]></equipment>
 				<treasure><![CDATA[- 10x Tongefäße
@@ -83,6 +83,7 @@ Potions:
 - 1x Jugend (gold)
 - 1x Muttermlich (grün)
 
+- 1x Zahn aus Schattenstein  Ein harter, glänzender Eckzahn. Alchemisten zahlen 25 GM. Kann als Fokus für einen Necrotic Spell verwendet werden – gibt +1 Schaden (einmalig).
 - Ring des Blutflüsterns (1x Message pro Tag, Stimme klingt bedrohlich)
 - Beutel mit verfluchter Asche 16/16
 - 1 x Ring Rabenfeder (100 Gold)
@@ -100,18 +101,18 @@ Potions:
 			<portrait>C:\Users\domin\Documents\5e Character Builder\portraits\human caedis.png</portrait>
 			<age>26</age>
 			<height>5'9"</height>
-			<weight>100 lb.</weight>
+			<weight>150 lb.</weight>
 			<eyes>Red</eyes>
 			<skin>Fair</skin>
 			<hair>White</hair>
 		</appearance>
 		<abilities available-points="15">
-			<strength>8</strength>
+			<strength>13</strength>
 			<dexterity>10</dexterity>
-			<constitution>12</constitution>
-			<intelligence>13</intelligence>
+			<constitution>14</constitution>
+			<intelligence>8</intelligence>
 			<wisdom>15</wisdom>
-			<charisma>14</charisma>
+			<charisma>12</charisma>
 		</abilities>
 		<elements level-count="5" registered-count="29">
 			<element type="Option" name="Feats" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
@@ -263,10 +264,13 @@ Potions:
 			</element>
 		</elements>
 		<defenses>
-			<conditional>Health: 31/31
+			<conditional>Health: 40/40
 Spell 1: 4/4
 Spell 2: 3/3
-Spell 3: 1/2</conditional>
+Spell 3: 2/2
+
+
+Bardic Inspiration: X</conditional>
 		</defenses>
 		<companion name="">
 			<attributes>
@@ -336,7 +340,7 @@ Spell 3: 1/2</conditional>
 					</notes>
 				</details>
 			</item>
-			<item identifier="953aec3f-9355-4374-8bcd-6411f76d87d7" name="Crossbow Bolt" id="ID_WOTC_PHB_ITEM_CROSSBOWBOLT" amount="20">
+			<item identifier="953aec3f-9355-4374-8bcd-6411f76d87d7" name="Crossbow Bolt" id="ID_WOTC_PHB_ITEM_CROSSBOWBOLT" amount="18">
 				<details card="true">
 					<name>
 					</name>
@@ -417,7 +421,7 @@ Spell 3: 1/2</conditional>
 					</notes>
 				</details>
 			</item>
-			<item identifier="7c6d6328-1d74-47a5-8fdb-ef1e3e6c09c6" name="Scale Mail" id="ID_WOTC_ARMOR_MEDIUM_SCALE_MAIL" sidebar="true">
+			<item identifier="7c6d6328-1d74-47a5-8fdb-ef1e3e6c09c6" name="Scale Mail" id="ID_WOTC_ARMOR_MEDIUM_SCALE_MAIL">
 				<equipped location="Armor">true</equipped>
 				<details card="true">
 					<name>
@@ -439,8 +443,16 @@ Wenn der Träger einen Kritischen Treffer verhindert, hört er für 1 Runde lang
 			<item identifier="e17229c0-06d0-46ad-ab44-be4e4e876c50" name="Horned Ring" id="ID_WOTC_WDMM_MAGIC_ITEM_HORNED_RING" sidebar="true">
 				<attunement>true</attunement>
 				<details card="true">
-					<name> Ring des Blutflüsterns</name>
+					<name>Ring des Blutflüsterns</name>
 					<notes>1x Message pro Tag, Stimme klingt bedrohlich</notes>
+				</details>
+			</item>
+			<item identifier="13be6ef9-fa47-47f3-ba5d-7fd40f492fb1" name="Torch" id="ID_WOTC_PHB_ITEM_TORCH">
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
 				</details>
 			</item>
 		</equipment>
@@ -474,14 +486,14 @@ Wenn der Träger einen Kritischen Treffer verhindert, hört er für 1 Runde lang
 			<element type="Level" id="ID_LEVEL_2" />
 			<element type="Level" id="ID_LEVEL_3" />
 			<element type="Level" id="ID_LEVEL_4" />
+			<element type="Spell" id="ID_XGTE_SPELL_WORD_OF_RADIANCE" />
 			<element type="Ability Score Improvement" id="ID_INTERNAL_ASI_WISDOM" />
 			<element type="Ability Score Improvement" id="ID_INTERNAL_ASI_WISDOM" />
+			<element type="Level" id="ID_LEVEL_5" />
 			<element type="Armor" id="ID_WOTC_GEAR_SHIELD" />
 			<element type="Item" id="ID_WOTC_PHB_ITEM_AMULET" />
 			<element type="Armor" id="ID_WOTC_ARMOR_MEDIUM_SCALE_MAIL" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
-			<element type="Level" id="ID_LEVEL_5" />
-			<element type="Spell" id="ID_XGTE_SPELL_WORD_OF_RADIANCE" />
 			<element type="Magic Item" id="ID_WOTC_WDMM_MAGIC_ITEM_HORNED_RING" />
 			<element type="Class" id="ID_WOTC_PHB_CLASS_CLERIC" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
@@ -576,24 +588,25 @@ Wenn der Träger einen Kritischen Treffer verhindert, hört er für 1 Runde lang
 					<spell name="Word of Radiance" level="0" id="ID_XGTE_SPELL_WORD_OF_RADIANCE" />
 				</cantrips>
 				<spells>
-					<spell name="Command" level="1" id="ID_PHB_SPELL_COMMAND" prepared="true" />
 					<spell name="False Life" level="1" id="ID_PHB_SPELL_FALSE_LIFE" prepared="true" always-prepared="true" known="true" />
 					<spell name="Guiding Bolt" level="1" id="ID_PHB_SPELL_GUIDING_BOLT" prepared="true" />
 					<spell name="Healing Word" level="1" id="ID_PHB_SPELL_HEALING_WORD" prepared="true" />
 					<spell name="Inflict Wounds" level="1" id="ID_PHB_SPELL_INFLICT_WOUNDS" prepared="true" />
 					<spell name="Ray of Sickness" level="1" id="ID_PHB_SPELL_RAY_OF_SICKNESS" prepared="true" always-prepared="true" known="true" />
+					<spell name="Aid" level="2" id="ID_PHB_SPELL_AID" prepared="true" />
 					<spell name="Blindness/Deafness" level="2" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" prepared="true" always-prepared="true" known="true" />
-					<spell name="Hold Person" level="2" id="ID_PHB_SPELL_HOLD_PERSON" prepared="true" />
 					<spell name="Ray of Enfeeblement" level="2" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" prepared="true" always-prepared="true" known="true" />
 					<spell name="Silence" level="2" id="ID_PHB_SPELL_SILENCE" prepared="true" />
 					<spell name="Spiritual Weapon" level="2" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" prepared="true" />
-					<spell name="Zone of Truth" level="2" id="ID_PHB_SPELL_ZONE_OF_TRUTH" prepared="true" />
 					<spell name="Animate Dead" level="3" id="ID_PHB_SPELL_ANIMATE_DEAD" prepared="true" always-prepared="true" known="true" />
-					<spell name="Remove Curse" level="3" id="ID_PHB_SPELL_REMOVE_CURSE" prepared="true" />
+					<spell name="Mass Healing Word" level="3" id="ID_PHB_SPELL_MASS_HEALING_WORD" prepared="true" />
+					<spell name="Speak with Dead" level="3" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" prepared="true" />
+					<spell name="Spirit Guardians" level="3" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" prepared="true" />
 					<spell name="Vampiric Touch" level="3" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" prepared="true" always-prepared="true" known="true" />
 					<spell name="Bane" level="1" id="ID_PHB_SPELL_BANE" />
 					<spell name="Bless" level="1" id="ID_PHB_SPELL_BLESS" />
 					<spell name="Ceremony" level="1" id="ID_XGTE_SPELL_CEREMONY" />
+					<spell name="Command" level="1" id="ID_PHB_SPELL_COMMAND" />
 					<spell name="Create or Destroy Water" level="1" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" />
 					<spell name="Cure Wounds" level="1" id="ID_PHB_SPELL_CURE_WOUNDS" />
 					<spell name="Detect Evil and Good" level="1" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" />
@@ -603,18 +616,19 @@ Wenn der Träger einen Kritischen Treffer verhindert, hört er für 1 Runde lang
 					<spell name="Purify Food and Drink" level="1" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" />
 					<spell name="Sanctuary" level="1" id="ID_PHB_SPELL_SANCTUARY" />
 					<spell name="Shield of Faith" level="1" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
-					<spell name="Aid" level="2" id="ID_PHB_SPELL_AID" />
 					<spell name="Augury" level="2" id="ID_PHB_SPELL_AUGURY" />
 					<spell name="Calm Emotions" level="2" id="ID_PHB_SPELL_CALM_EMOTIONS" />
 					<spell name="Continual Flame" level="2" id="ID_PHB_SPELL_CONTINUAL_FLAME" />
 					<spell name="Enhance Ability" level="2" id="ID_PHB_SPELL_ENHANCE_ABILITY" />
 					<spell name="Find Traps" level="2" id="ID_PHB_SPELL_FIND_TRAPS" />
 					<spell name="Gentle Repose" level="2" id="ID_PHB_SPELL_GENTLE_REPOSE" />
+					<spell name="Hold Person" level="2" id="ID_PHB_SPELL_HOLD_PERSON" />
 					<spell name="Lesser Restoration" level="2" id="ID_PHB_SPELL_LESSER_RESTORATION" />
 					<spell name="Locate Object" level="2" id="ID_PHB_SPELL_LOCATE_OBJECT" />
 					<spell name="Prayer of Healing" level="2" id="ID_PHB_SPELL_PRAYER_OF_HEALING" />
 					<spell name="Protection from Poison" level="2" id="ID_PHB_SPELL_PROTECTION_FROM_POISON" />
 					<spell name="Warding Bond" level="2" id="ID_PHB_SPELL_WARDING_BOND" />
+					<spell name="Zone of Truth" level="2" id="ID_PHB_SPELL_ZONE_OF_TRUTH" />
 					<spell name="Beacon of Hope" level="3" id="ID_PHB_SPELL_BEACON_OF_HOPE" />
 					<spell name="Bestow Curse" level="3" id="ID_PHB_SPELL_BESTOW_CURSE" />
 					<spell name="Clairvoyance" level="3" id="ID_PHB_SPELL_CLAIRVOYANCE" />
@@ -627,14 +641,12 @@ Wenn der Träger einen Kritischen Treffer verhindert, hört er für 1 Runde lang
 					<spell name="Incite Greed" level="3" id="ID_WOTC_ACQINC_SPELL_INCITE_GREED" />
 					<spell name="Life Transference" level="3" id="ID_XGTE_SPELL_LIFE_TRANSFERENCE" />
 					<spell name="Magic Circle" level="3" id="ID_PHB_SPELL_MAGIC_CIRCLE" />
-					<spell name="Mass Healing Word" level="3" id="ID_PHB_SPELL_MASS_HEALING_WORD" />
 					<spell name="Meld into Stone" level="3" id="ID_PHB_SPELL_MELD_INTO_STONE" />
 					<spell name="Motivational Speech" level="3" id="ID_WOTC_ACQINC_SPELL_MOTIVATIONAL_SPEECH" />
 					<spell name="Protection from Energy" level="3" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" />
+					<spell name="Remove Curse" level="3" id="ID_PHB_SPELL_REMOVE_CURSE" />
 					<spell name="Revivify" level="3" id="ID_PHB_SPELL_REVIVIFY" />
 					<spell name="Sending" level="3" id="ID_PHB_SPELL_SENDING" />
-					<spell name="Speak with Dead" level="3" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
-					<spell name="Spirit Guardians" level="3" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" />
 					<spell name="Tongues" level="3" id="ID_PHB_SPELL_TONGUES" />
 					<spell name="Water Walk" level="3" id="ID_PHB_SPELL_WATER_WALK" />
 				</spells>
